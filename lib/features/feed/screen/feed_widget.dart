@@ -70,9 +70,12 @@ class FeedItemWidget extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 12),
-                      Text(feedItem.content,
-                          style: AppTextStyles.regular500Style10
-                              .copyWith(color: const Color(0xff364960))),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(feedItem.content,
+                            style: AppTextStyles.regular500Style10
+                                .copyWith(color: const Color(0xff364960))),
+                      ),
                       const SizedBox(height: 18),
                     ],
                   ),
