@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:chance/features/chat/screen/all_chat_screen.dart';
 import 'package:chance/features/createPost/screen/create_post.dart';
 import 'package:chance/features/feed/screen/feed_screen.dart';
@@ -48,43 +46,52 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              'assets/images/home.svg',
-              color:
-                  _selectedIndex == 0 ? const Color(0xff5DC482) : Colors.black,
-            ),
+            icon: SvgPicture.asset('assets/images/home.svg',
+                colorFilter: ColorFilter.mode(
+                    _selectedIndex == 0
+                        ? const Color(0xff5DC482)
+                        : Colors.black,
+                    BlendMode.srcIn)),
             label: 'Home',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/images/search.svg',
-                color: _selectedIndex == 1
-                    ? const Color(0xff5DC482)
-                    : Colors.black),
+            icon: SvgPicture.asset(
+              'assets/images/search.svg',
+              colorFilter: ColorFilter.mode(
+                  _selectedIndex == 1 ? const Color(0xff5DC482) : Colors.black,
+                  BlendMode.srcIn),
+            ),
             label: 'Search',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset('assets/images/create.svg',
-                color: _selectedIndex == 2
-                    ? const Color(0xff5DC482)
-                    : Colors.black),
+                colorFilter: ColorFilter.mode(
+                    _selectedIndex == 2
+                        ? const Color(0xff5DC482)
+                        : Colors.black,
+                    BlendMode.srcIn)),
             label: 'Create',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset('assets/images/chat.svg',
-                color: _selectedIndex == 3
-                    ? const Color(0xff5DC482)
-                    : Colors.black),
+                colorFilter: ColorFilter.mode(
+                    _selectedIndex == 3
+                        ? const Color(0xff5DC482)
+                        : Colors.black,
+                    BlendMode.srcIn)),
             label: 'Chat',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset('assets/images/profile.svg',
-                color: _selectedIndex == 4
-                    ? const Color(0xff5DC482)
-                    : Colors.black),
+                colorFilter: ColorFilter.mode(
+                    _selectedIndex == 4
+                        ? const Color(0xff5DC482)
+                        : Colors.black,
+                    BlendMode.srcIn)),
             label: 'Profile',
             backgroundColor: Colors.white,
           ),
