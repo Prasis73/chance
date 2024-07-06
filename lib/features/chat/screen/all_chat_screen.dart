@@ -20,7 +20,7 @@ class AllChatScreen extends StatelessWidget {
               ),
               title: const Text("Test"),
               subtitle: const Text("Last Message"),
-              trailing: const Text("9:15)"),
+              trailing: const Text("9:15"),
               onTap: () {
                 context.push('/chat');
               },
